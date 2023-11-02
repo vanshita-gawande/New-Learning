@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="slider.css">
+</head>
+<body>
+
+    <!-- Slideshow container -->
+<div class="slideshow-container">
+<!-- navbar -->
+<nav>
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+<!-- navbar end -->
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+
+      <img src="images\hotel1.jpg" style="width:100%">
+      <div class="text"><h5>WELCOME TO OUR HOTEL APNAPAN</h5>
+        <p class="caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis vel, illo illum fuga reprehenderit quae voluptatum, fugiat quos ad molestias inventore provident! Corrupti dignissimos vitae, praesentium possimus fugiat et odit.</p></div>
+    </div>
+
+    <div class="mySlides fade">
+
+      <img src="images\hotel2.jpg" style="width:100%">
+      <div class="text"><h5>WELCOME TO OUR HOTEL APNAPAN</h5>
+        <p class="caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis vel, illo illum fuga reprehenderit quae voluptatum, fugiat quos ad molestias inventore provident! Corrupti dignissimos vitae, praesentium possimus fugiat et odit.</p></div>
+    </div>
+
+    <div class="mySlides fade">
+
+      <img src="images\hotel3.jpg" style="width:100%">
+      <div class="text"><h5>WELCOME TO OUR HOTEL APNAPAN</h5>
+        <p class="caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis vel, illo illum fuga reprehenderit quae voluptatum, fugiat quos ad molestias inventore provident! Corrupti dignissimos vitae, praesentium possimus fugiat et odit.</p></div>
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+</body>
+
+<script src="slider.js"></script>
+</html>

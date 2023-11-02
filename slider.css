@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box
+}
+
+
+/* nav */
+nav {
+    position: fixed;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links li {
+    margin: 0 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* nav end */
+
+/* Slideshow container */
+
+
+.slideshow-container {
+    max-width: 1521px;
+    position: relative;
+    margin: 30px 47px 0px 47px;
+
+}
+
+
+img {
+    height: 614px;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 20px;
+    padding: 36px 312px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    transition: opacity 0.5s;
+    text-transform: uppercase;
+
+
+}
+/* Caption text animation */
+@keyframes caption-fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.caption {
+    animation: caption-fade 1.5s ease; /* Apply the animation to elements with class "caption" */
+}
+@keyframes slide-in {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-out {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+.caption {
+    animation: slide-in 1s ease;
+}
+
+.caption.slide-out {
+    animation: slide-out 1s ease;
+}
+
+/* for h5 */
+@keyframes slide-in-from-right {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+h5{
+    animation: slide-in-from-right 1s ease;
+}
+/* h5 */
+
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
