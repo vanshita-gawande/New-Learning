@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <title>HOTEL VK</title>
@@ -9,19 +9,14 @@
     <link rel="icon" href="images/iogo.png" type="image/png">
     <style>
         * {
-            box-sizing: border-box
-        }
-        /* nav */
-        nav {
-            position: relative;
+            box-sizing: border-box;
         }
 
+        /* nav */
         nav {
             background-color: #000000;
             color: #ffffff;
-
         }
-
         .nav-links {
             list-style: none;
             padding: 0;
@@ -44,22 +39,13 @@
             text-decoration: underline;
         }
 
-        /* nav end */
-
         /* Slideshow container */
-
-
         .slideshow-container {
-            max-width: 1521px;
+            width: 100%;
+            max-width: 1521px; /* You can adjust this as needed */
             position: relative;
-            margin: 30px 47px 0px 47px;
-
+            margin: 30px auto; /* Center the container */
         }
-
-
-        /* img {
-    height: 614px;;
-} */
 
         /* Hide the images by default */
         .mySlides {
@@ -99,86 +85,20 @@
         .text {
             color: #f2f2f2;
             font-size: 20px;
-            padding: 36px 312px;
+            padding: 20px; /* Adjust padding for smaller screens */
             position: absolute;
             bottom: 8px;
             width: 100%;
             text-align: center;
             transition: opacity 0.5s;
             text-transform: uppercase;
-
-
         }
-
-        /* Caption text animation */
-        @keyframes caption-fade {
-            from {
-                opacity: 0;
-            }
-
-            to {
-                opacity: 1;
-            }
-        }
-
-        .caption {
-            animation: caption-fade 1.5s ease;
-            /* Apply the animation to elements with class "caption" */
-        }
-
-        @keyframes slide-in {
-            from {
-                transform: translateX(-100%);
-            }
-
-            to {
-                transform: translateX(0);
-            }
-        }
-
-        @keyframes slide-out {
-            from {
-                transform: translateX(0);
-            }
-
-            to {
-                transform: translateX(100%);
-            }
-        }
-
-        .caption {
-            animation: slide-in 1s ease;
-        }
-
-        .caption.slide-out {
-            animation: slide-out 1s ease;
-        }
-
-        /* for h5 */
-        @keyframes slide-in-from-right {
-            from {
-                transform: translateX(100%);
-                opacity: 0;
-            }
-
-            to {
-                transform: translateX(0);
-                opacity: 1;
-            }
-        }
-
-        h5 {
-            animation: slide-in-from-right 1s ease;
-        }
-
-        /* h5 */
-
 
         /* The dots/bullets/indicators */
         .dot {
             cursor: pointer;
-            height: 15px;
-            width: 15px;
+            height: 10px; /* Adjust size for dots */
+            width: 10px; /* Adjust size for dots */
             margin: 0 2px;
             background-color: #bbb;
             border-radius: 50%;
@@ -191,12 +111,8 @@
             background-color: #717171;
         }
 
-
         /* signin starts here */
-
-        /* styles.css */
         #openModalButton {
-
             text-align: right;
             margin-left: 90%;
             padding-left: 1%;
@@ -255,10 +171,6 @@
             background-color: hsl(60, 4%, 9%);
         }
 
-
-
-        /* signin ends here */
-
         /* for rooms book now */
         .modal {
             display: none;
@@ -273,7 +185,6 @@
 
         .modal-content {
             background-color: #fff;
-            /* margin: 15% auto; */
             padding: 20px;
             width: 50%;
         }
@@ -285,13 +196,44 @@
 
         /* for rooms book now */
         .loc span {
-    display: block;  /* Makes each span behave like a block element */
-    text-align: center;
-}
+            display: block; /* Makes each span behave like a block element */
+            text-align: center;
+        }
 
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .nav-links {
+                flex-direction: column; /* Stack nav items vertically */
+            }
+
+            .text {
+                padding: 10px; /* Reduce padding for smaller screens */
+                font-size: 16px; /* Adjust font size */
+            }
+
+            .prev, .next {
+                padding: 10px; /* Adjust button padding */
+                font-size: 16px; /* Adjust button font size */
+            }
+
+            .dot {
+                height: 8px; /* Adjust size for dots */
+                width: 8px; /* Adjust size for dots */
+            }
+
+            .room-image img {
+                height: 200px; /* Adjust room image height */
+            }
+
+            .book-form {
+                flex-direction: column; /* Stack form items vertically */
+            }
+
+            .form-item {
+                margin: 5px 0; /* Adjust margin for form items */
+            }
+        }
     </style>
-
-
 </head>
 
 <body>
@@ -308,13 +250,9 @@
                     <li><a href="#">FEEDBACK</a></li>
                     <li><a href="#">ABOUT US</a></li>
                     <li><a href="#">CONTACT US</a></li>
-
-
-
                 </ul>
             </nav>
             <!-- signin starts here-->
-
             <button id="openModalButton" class="sign"> Sign In</button>
             <div id="modal" class="modal">
                 <div class="modal-content">
@@ -331,50 +269,48 @@
             </div>
             <script src="scriptsignin.js"></script>
             <!-- signin end-->
-
             <!-- navbar end -->
-
 
             <!-- Full-width images with number and caption text -->
             <div class="mySlides fade">
-                <img src="images\iogo.png" style="height: 70px;  padding:0px; margin: -70px 158px 0px 3px;">
-                <img src="images\hotel1.jpg" style="width:100%; height:614px;">
+                <img src="images/iogo.png" style="height: 70px; padding:0px; margin: -70px 158px 0px 3px;">
+                <img src="images/hotel1.jpg" style="width:100%; height:auto;">
 
                 <div class="text">
-                    <h2>wELCOME TO VASUDHAIVA KUTUMBAKAM</h2>
+                    <h2>WELCOME TO VASUDHAIVA KUTUMBAKAM</h2>
                     <p>In a world that is diverse, let us embrace unity and togetherness!!
-                        Recognizing the oneness of humanity unites us all..</h5>
-                    <p class="caption">This is a Hotel renowned among its guests for providing highest level of service
+                        Recognizing the oneness of humanity unites us all..</p>
+                    <p class="caption">This is a Hotel renowned among its guests for providing the highest level of service
                         at reasonable prices.
-                        The next time whether its work or leisure, come stay with us. Mehfil Inn offers all the things
+                        The next time whether it's work or leisure, come stay with us. Mehfil Inn offers all the things
                         you need for a happy, productive trip, a great night’s sleep, comfortable in-room features,
-                        efficient service and convenient locations</p>
+                        efficient service, and convenient locations</p>
                 </div>
             </div>
 
             <div class="mySlides fade">
-                <img src="images\iogo.png" style="height: 70px;  padding:0px; margin: -70px 158px 0px 3px;">
-                <img src="images\slider2.avif" style="width:100%; height:614px;">
+                <img src="images/iogo.png" style="height: 70px; padding:0px; margin: -70px 158px 0px 3px;">
+                <img src="images/slider2.avif" style="width:100%; height:auto;">
                 <div class="text">
                     <h2>WELCOME TO VASUDHAIV KUTUMBAKAM</h2>
-                    <p class="caption">This is a Hotel renowned among its guests for providing highest level of service
+                    <p class="caption">This is a Hotel renowned among its guests for providing the highest level of service
                         at reasonable prices.
-                        The next time whether its work or leisure, come stay with us. Mehfil Inn offers all the things
+                        The next time whether it's work or leisure, come stay with us. Mehfil Inn offers all the things
                         you need for a happy, productive trip, a great night’s sleep, comfortable in-room features,
-                        efficient service and convenient locations</p>
+                        efficient service, and convenient locations</p>
                 </div>
             </div>
 
             <div class="mySlides fade">
-                <img src="images\iogo.png" style="height: 70px;  padding:0px;margin: -70px 158px 0px 3px;">
-                <img src="images\hotel3.jpg" style="width:100%; height:614px;">
+                <img src="images/iogo.png" style="height: 70px; padding:0px;margin: -70px 158px 0px 3px;">
+                <img src="images/hotel3.jpg" style="width:100%; height:auto;">
                 <div class="text">
                     <h2>WELCOME TO VASUDHAIV KUTUMBAKAM</h2>
-                    <p class="caption">This is a Hotel renowned among its guests for providing highest level of service
+                    <p class="caption">This is a Hotel renowned among its guests for providing the highest level of service
                         at reasonable prices.
-                        The next time whether its work or leisure, come stay with us. Mehfil Inn offers all the things
+                        The next time whether it's work or leisure, come stay with us. Mehfil Inn offers all the things
                         you need for a happy, productive trip, a great night’s sleep, comfortable in-room features,
-                        efficient service and convenient locations</p>
+                        efficient service, and convenient locations</p>
                 </div>
             </div>
 
@@ -405,100 +341,68 @@
                 if (slideIndex > slides.length) { slideIndex = 1 }
                 slides[slideIndex - 1].style.display = "block";
                 setTimeout(showSlides, 2000); // Change image every 2 seconds
-            }</script>
-
+            }
+        </script>
     </section>
 
-    <!-- slider -->
     <!-- services -->
-
-    <!-- body content  -->
     <section class="services sec-width" id="services">
         <div class="title">
-            <h2>services</h2>
+            <h2>Services</h2>
         </div>
 
         <section class="ourservices">
             <div class="main">
                 <div class="cards">
-
                     <div class="image" id="breakfast">
                         <img src="images/breakfast.jpg" style="height: 201px;">
-
                     </div>
                     <div class="title">
                         <h6>24*7 Room Dining</h6>
-
                     </div>
                     <div class="des">
-                        <p>Enjoy the Authentic Flavours and personalized dining experiences in comfort of your room!</p>
-
-
+                        <p>Enjoy the Authentic Flavours and personalized dining experiences in the comfort of your room!</p>
                     </div>
                 </div>
-
-                <!-- cards -->
 
                 <div class="cards">
                     <div class="image">
                         <img src="images/pool.jpg" style="height: 183px;">
-
                     </div>
                     <div class="title">
                         <h6>Infinity Pool</h6>
-
                     </div>
                     <div class="des">
                         <p>Take time to rest and relax as you gaze at mesmerizing views of the Singapore skyline from
                             our inviting pool - open daily from 8am to 10pm.</p>
-
-
                     </div>
                 </div>
-
-                <!-- cards -->
 
                 <div class="cards">
                     <div class="image">
                         <img src="images/pickup and drop.jpg" style="height: 150px;">
-
-
                     </div>
                     <div class="title">
                         <h6>Pickup And Drop</h6>
-
                     </div>
                     <div class="des">
-                        <p>When you plan your stay with us ,you can easily forget about hoe to get from one place to
-                            other.WE offer Pickup and Drop Facilities so you can enjoy your weekand!</p>
-
-
+                        <p>When you plan your stay with us, you can easily forget about how to get from one place to
+                            another. We offer Pickup and Drop Facilities so you can enjoy your weekend!</p>
                     </div>
                 </div>
-
-                <!-- cards -->
 
                 <div class="cards">
                     <div class="image">
                         <img src="images/Free Wifi.jpg" style="height: 201px;">
-
                     </div>
                     <div class="title">
                         <h6>Free High Speed Internet</h6>
-
                     </div>
                     <div class="des">
-                        <p>Complimentary WiFi connectivity throughout hotel is available for your buisness and social
+                        <p>Complimentary WiFi connectivity throughout the hotel is available for your business and social
                             needs!</p>
-
-
                     </div>
                 </div>
-
-
-            </div>
-
-            <!-- end of single service -->
             </div>
         </section>
 
@@ -506,14 +410,14 @@
             <form action="connect.php" method="post" class="book-form" action="" autocomplete="off">
                 <div class="form-item">
                     <label for="checkindate">Check In Date: </label>
-                    <input type="date" id="chekindate" name="checkindate">
+                    <input type="date" id="checkindate" name="checkindate">
                 </div>
                 <div class="form-item">
                     <label for="checkoutdate">Check Out Date: </label>
-                    <input type="date" id="chekoutdate" name="checkoutdate">
+                    <input type="date" id="checkoutdate" name="checkoutdate">
                 </div>
                 <div class="form-item">
-                    <label for="adults">adults: </label>
+                    <label for="adults">Adults: </label>
                     <input type="number" min="1" value="1" id="adults" name="adults">
                 </div>
                 <div class="form-item">
@@ -530,43 +434,34 @@
             </form>
         </div>
 
-
-
         <!-- rooms -->
         <section class="rooms sec-width" id="rooms">
             <div class="title">
                 <h4>Explore Our Rooms!</h4>
-
             </div>
-            <!-- rooms -->
             <div class="rooms-container">
                 <!-- single room -->
                 <article class="room">
                     <h3>Delux Room</h3>
                     <div class="room-image">
-                        <img src="images/room1.jpg" alt="room image" style="height: 300px; padding:25px;;">
+                        <img src="images/room1.jpg" alt="room image" style="height: 300px; padding:25px;">
                     </div>
                     <div class="room-text">
-                        <!-- <h3>Delux Room</h3> -->
                         <ul>
                             <li>
                                 <i class="fas fa-arrow-alt-circle-right"></i>
                                 Well appointed Room as per booking.
-
                             </li>
                             <li>
                                 <i class="fas fa-arrow-alt-circle-right"></i>
                                 Complimentary Iron and Iron Board
-
-
                             </li>
                         </ul>
                         <p>Our Premium room coupled with extra-large balcony with spacious comfortable surroundings. It
-                            designed to blend effortlessly to green surrounding. Sleeps 2 adults.</p>
+                            is designed to blend effortlessly with the green surroundings. Sleeps 2 adults.</p>
                         <p class="rate">
                             <span>3000/-</span> Per Night
                         </p>
-                        <!-- booknowbutton -->
                         <button id="bookButtonDEL">Book Now</button>
                         <div id="bookingModalDEL" class="modal">
                             <div class="modal-content">
@@ -580,19 +475,13 @@
                                     <label for="time">Time:</label>
                                     <input type="time" id="timeDEL" name="time" required><br>
                                     <button type="submit">Submit</button>
-                                    <!-- this div for success message -->
-
-
                                 </form>
-
                                 <div id="successMessageDEL" style="display: none;">
                                     <p>Booking successful! Thank you for choosing our restaurant.</p>
                                 </div>
                             </div>
                         </div>
                         <script src="delux.js"></script>
-                        <!-- booknowbutton -->
-
                     </div>
                 </article>
                 <!-- end of single room -->
@@ -603,28 +492,22 @@
                         <img src="images/room2.jpg" alt="room image" style="height: 300px; padding:25px;">
                     </div>
                     <div class="room-text">
-                        <!-- <h3>premier room</h3> -->
                         <ul>
                             <li>
                                 <i class="fas fa-arrow-alt-circle-right"></i>
                                 Valley view with balcony.
-
                             </li>
                             <li>
                                 <i class="fas fa-arrow-alt-circle-right"></i>
                                 Free Dental kit and Shaving Kit
-
                             </li>
-
                         </ul>
-                        <p>A special arrangement for guests is what makes this deluxe room special.our rooms are
+                        <p>A special arrangement for guests is what makes this deluxe room special. Our rooms are
                             beautifully furnished, ornamented with unique modern art.
                         </p>
-
                         <p class="rate">
                             <span>2500/-</span> Per Night
                         </p>
-                        <!-- booknowbutton -->
                         <button id="bookButtonPRE">Book Now</button>
                         <div id="bookingModalPRE" class="modal">
                             <div class="modal-content">
@@ -638,20 +521,13 @@
                                     <label for="time">Time:</label>
                                     <input type="time" id="timePRE" name="time" required><br>
                                     <button type="submit">Submit</button>
-                                    <!-- Add this div for success message -->
-
-
                                 </form>
-
                                 <div id="successMessagePRE" style="display:none;">
                                     <p>Booking successful! Thank you for choosing our restaurant.</p>
                                 </div>
                             </div>
                         </div>
                         <script src="premier.js"></script>
-                        <!-- booknowbutton -->
-                        <!-- <button type = "button" class = "btn btn-primary btn-xs" id="vanshita">book now</button> -->
-
                     </div>
                 </article>
                 <!-- end of single room -->
@@ -662,26 +538,21 @@
                         <img src="images/room3.jpg" alt="room image" style="height: 300px; padding:25px;">
                     </div>
                     <div class="room-text">
-                        <!-- <h3>DELUX MARINE SUITE</h3> -->
                         <ul>
                             <li>
                                 <i class="fas fa-arrow-alt-circle-right"></i>
                                 Doctor On Call
-
-
                             </li>
                             <li>
                                 <i class="fas fa-arrow-alt-circle-right"></i>
                                 Tea /coffee maker in the room.
                             </li>
-
                         </ul>
                         <p>The rooms have spacious accommodations, abundant with natural light that flows in through
                             large windows.</p>
                         <p class="rate">
                             <span>3000/-</span> Per Night
                         </p>
-                        <!-- booknowbutton -->
                         <button id="bookButtonSUI">Book Now</button>
                         <div id="bookingModalSUI" class="modal">
                             <div class="modal-content">
@@ -695,20 +566,13 @@
                                     <label for="time">Time:</label>
                                     <input type="time" id="timeSUI" name="time" required><br>
                                     <button type="submit">Submit</button>
-                                    <!-- Add this div for success message -->
-
-
                                 </form>
-
-                                <div id="successMessageSUI" style="display:none; ">
+                                <div id="successMessageSUI" style="display:none;">
                                     <p>Booking successful! Thank you for choosing our restaurant.</p>
                                 </div>
                             </div>
                         </div>
                         <script src="suite.js"></script>
-                        <!-- booknowbutton -->
-                        <!-- <button type = "button" class = "btn btn-primary btn-xs" id="vanshita">book now</button> -->
-
                     </div>
                 </article>
                 <!-- end of single room -->
@@ -719,7 +583,6 @@
                         <img src="images/room4.jpg" alt="room image" style="height: 300px; padding:25px;">
                     </div>
                     <div class="room-text">
-                        <!-- <h3>DELUX MARINE SUITE</h3> -->
                         <ul>
                             <li>
                                 <i class="fas fa-arrow-alt-circle-right"></i>
@@ -735,7 +598,6 @@
                         <p class="rate">
                             <span>2400/-</span> Per Night
                         </p>
-                        <!-- booknowbutton -->
                         <button id="bookButtonSING">Book Now</button>
                         <div id="bookingModalSING" class="modal">
                             <div class="modal-content">
@@ -749,30 +611,18 @@
                                     <label for="time">Time:</label>
                                     <input type="time" id="timeSING" name="time" required><br>
                                     <button type="submit">Submit</button>
-                                    <!-- Add this div for success message -->
-
-
                                 </form>
-
                                 <div id="successMessageSING" style="display:none;">
                                     <p>Booking successful! Thank you for choosing our restaurant.</p>
                                 </div>
                             </div>
                         </div>
                         <script src="single.js"></script>
-                        <!-- booknowbutton -->
-                        <!-- <button type = "button" class = "btn btn-primary btn-xs" id="vanshita">book now</button> -->
-
                     </div>
                 </article>
             </div>
-            <!-- booknowbutton -->
-
-            <!-- booknowbutton -->
         </section>
         <!-- rooms -->
-
-
 
         <!-- single customer -->
         <div class="customer">
@@ -785,8 +635,7 @@
             </div>
             <h3>AWESOME!</h3>
             <p>The rooms were clean, very comfortable, and the staff was amazing. They went over and beyond to help make our stay enjoyable. I highly recommend this hotel for anyone visiting downtown (L).</p>
-            <!-- <img src="images/cus2.jpg" alt="customer image"> -->
-            <span>Kiara,India</span>
+            <span>Kiara, India</span>
         </div>
         <!-- end of single customer -->
         <!-- single customer -->
@@ -800,64 +649,43 @@
             </div>
             <h3>FABULOUS!</h3>
             <p>The staff at this property are all great! They all go above and beyond to make your stay comfortable</p>
-            <!-- <img src="images/cus3.jpg" alt="customer image"> -->
-            <span>Ronaldo,Spain </span>
+            <span>Ronaldo, Spain</span>
         </div>
         <!-- end of single customer -->
-        </div>
-        </div>
-
-
     </section>
     <!-- end of body content -->
 
     <!-- footer -->
-    <footer class = "footer">
-            
+    <footer class="footer">
         <div>
-            <!-- <h2>About Us</h2> -->
-             <img src="images\receptionists-5975962_1280.jpg" style="width:500px;
-             height:290px;
-             margin:20px 20px 20px 20px;
-             position: relative;
-             float: right;"> 
-             <h2>About Us</h2>
-        
-        <p>Our hotel Vasudhaiv Kutumbakams is one of India's fastest-growing hospitality brands, managing a portfolio of over 95+ properties across the country. Founded in 2001 by industry veteran Mr. Chander K Baljee, Royal Orchid & Regenta Hotels is a renowned and trusted brand with a growth plan to reach 100 hotels by 2023.
-
+            <img src="images/receptionists-5975962_1280.jpg" style="width:500px; height:290px; margin:20px; position: relative; float: right;">
+            <h2>About Us</h2>
+            <p>Our hotel Vasudhaiv Kutumbakams is one of India's fastest-growing hospitality brands, managing a portfolio of over 95+ properties across the country. Founded in 2001 by industry veteran Mr. Chander K Baljee, Royal Orchid & Regenta Hotels is a renowned and trusted brand with a growth plan to reach 100 hotels by 2023.
             We cater to business and leisure travellers who value comfort, great cuisine, distinctly warm Indian hospitality, and value for money.</p>
-        
-        <h3 style="text-align: center">Have A Question</h3>
-        <div class="loc">
-        <span>
-            <i class = "fas fa-map-marker-alt"></i>
-        </span>
-        
-        <span>
-           Near Sipna College,Amravati <br>
-        </span>
-    
-    
-        <span>
-            <i class = "fas fa-phone-alt"></i>
-        </span>
-        <span>
-            +91 9699983645 <br>
-        </span>           
-        <span>
-            <i class = "fas fa-envelope"></i>
-        </span>
-        <span>
-            mail@gmail.com <br>
-        </span>
+            <h3 style="text-align: center">Have A Question</h3>
+            <div class="loc">
+                <span>
+                    <i class="fas fa-map-marker-alt"></i>
+                </span>
+                <span>
+                     Near Sipna College, Amravati <br>
+                </span>
+                <span>
+                    <i class="fas fa-phone-alt"></i>
+                </span>
+                <span>
+                    +91 9699983645 <br>
+                </span>
+                <span>
+                    <i class="fas fa-envelope"></i>
+                </span>
+                <span>
+                    mail@gmail.com <br>
+                </span>
+            </div>
         </div>
-    
-    </div>
-
-      
-</footer>
-<!-- end of footer -->
+    </footer>
+    <!-- end of footer -->
     <script src="script.js"></script>
 </body>
-
 </html>
